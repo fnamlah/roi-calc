@@ -3,9 +3,11 @@
     grid-template-columns: 1fr;
     row-gap: 2.4rem;
   }
-  /* body {
-    padding: 0.5rem;
-  } */
+  .heading {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 4.4rem;
+  }
   table {
     border-spacing: 1.2rem;
     border-collapse: separate;
