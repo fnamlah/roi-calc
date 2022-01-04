@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script defer src="script.js"></script>
+    <title>ROI Calc</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Return On Investment Calculator</h1>
+    </header>
+    <div class="container">
+      <div class="grid-2-col">
+        <div class="input">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="6">ROI Calculator</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Amount Invested</td>
+                <td>
+                  <span class="input-group-addon">$</span>
+                  <input
+                    type="number"
+                    value="1000"
+                    min="0"
+                    step="0.01"
+                    data-number-to-fixed="2"
+                    data-number-stepfactor="100"
+                    class="initial--value"
+                    required="required"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Amount Returned</td>
+                <td>
+                  <span class="input-group-addon">$</span>
+                  <input
+                    type="number"
+                    value="2000"
+                    min="0"
+                    step="0.01"
+                    data-number-to-fixed="2"
+                    data-number-stepfactor="100"
+                    class="return--value"
+                    required="required"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="length">Investment Length</td>
+                <td>
+                  <input
+                    type="number"
+                    min="0"
+                    value="5"
+                    data-number-to-fixed="2"
+                    data-number-stepfactor="100"
+                    class="years-value"
+                    placeholder="years"
+                    required="required"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn--calc">Calculate</button>
+        </div>
+
+        <div class="roi--table">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="8">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Investment Gain</td>
+                <td>
+                  <span class="dolla--sign"></span>
+                  <span class="gain--value"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Return on Investment</td>
+                <td>
+                  <span class="roi--value"></span>
+                  <span class="input--percent-1"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Annualized ROI</td>
+                <td>
+                  <span class="an-roi--value"></span>
+                  <span class="input--percent-2"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Investment Length</td>
+                <td>
+                  <span class="years--value"></span>
+                  <span class="input--years"></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
